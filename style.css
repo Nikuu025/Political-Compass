@@ -2,6 +2,8 @@ body
 {
     margin: 0;
     background-color: #202025;
+    font-family: Lato;
+    color: white;
 }
 
 #container
@@ -10,15 +12,89 @@ body
     flex-direction: column;
 }
 
+#placeholder
+{
+    width: 100%;
+}
+
 #header-container
 {
     background-color: #000005;
     display: flex;
     flex-direction: row;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
-.header-half
+
+#header-logo
 {
-    width: 50%;
-    min-height: 10vh;
+    font-family: Dongle;
+    font-size: larger;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 20px;
+    width: 25%;
 }
+
+#header-menu
+{
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+#header-menu a 
+{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    padding: 10px;
+}
+
+#header-menu a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  #header-menu  a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+#header-menu select 
+{
+    background-color: #202025;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+}
+
+#mobile-menu
+{
+    font-size: 50px;
+    padding: 10px;
+    border-radius: 100px;
+}
+
+#mobile-menu:hover
+{
+    background-color: #404045;
+}
+
+
