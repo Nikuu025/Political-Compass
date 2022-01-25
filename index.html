@@ -26,7 +26,7 @@
                     </div>
 
                     
-                    <div id="header-menu" class="header-l-r">
+                    <nav id="header-menu" class="header-l-r">
 
                             <a href="test.html" class="header-menu-item" draggable="false">TAKE THE TEST</a>
                             <a href="about.html" class="header-menu-item" draggable="false">ABOUT</a>
@@ -37,12 +37,23 @@
                                 <option value="DE">German</option>
                             </select>
 
-                            <i class='bx bx-menu' id="mobile-menu"></i>
+                            <i class='bx bx-menu' id="mobile-menu" onclick="showMenu()"></i>
                         
-                    </div>
+                        </nav>
                     
                 </div>
             </header>
+
+            <nav id="mobile-menu-container" style="display: none;">
+                <div class="mobile-menu-item"><a href="test.html" draggable="false">TAKE THE TEST</a></div>
+                <div class="mobile-menu-item"><a href="about.html" draggable="false">ABOUT</a></div>
+
+                <div class="mobile-menu-item mobile-menu-languages">
+                    <button id="english" onclick="English()"></button>
+                    <button id="polish" onclick="Polish()"></button>
+                    <button id="german" onclick="German()"></button>
+                </div>
+            </nav>
 
 
             <div id="main-container">
@@ -114,6 +125,25 @@
             
 
             console.log(window.innerWidth);
+        }
+    </script>
+
+    <!--Show and hide mobile header menu-->
+    <script type="text/javascript">
+        var isShowed = 0;
+
+        function showMenu()
+        {
+            if(isShowed==0)
+            {
+                isShowed=1;
+                document.getElementById("mobile-menu-container").style.display="flex";
+            }
+            else 
+            {
+                isShowed=0;
+                document.getElementById("mobile-menu-container").style.display="none";
+            }
         }
     </script>
 

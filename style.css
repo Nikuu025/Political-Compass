@@ -59,7 +59,7 @@ body
     padding: 10px;
 }
 
-#header-menu a:after {    
+#header-menu a:after, .mobile-menu-item a:after {    
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
     content: "";
@@ -71,7 +71,7 @@ body
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
   }
-  #header-menu  a:hover:after { 
+  #header-menu  a:hover:after, .mobile-menu-item a:hover:after { 
     width: 100%; 
     left: 0; 
   }
@@ -83,6 +83,7 @@ body
     border: 0;
     border-radius: 5px;
     color: white;
+    padding: 5px;
 }
 
 #mobile-menu
@@ -97,4 +98,65 @@ body
     background-color: #404045;
 }
 
+
+#mobile-menu-container
+{
+    width: 100%;
+    position: fixed;
+    top: 150px;
+    background-color: #000005;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-menu-item
+{
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-menu-item a
+{
+    color: white;
+    text-decoration: none;
+    position: relative;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    padding: 5px;
+}
+
+.mobile-menu-languages
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mobile-menu-languages button 
+{
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+    outline: none;
+    border: 3px solid white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.mobile-menu-languages button:hover
+{
+    -webkit-filter: brightness(0.7);
+}
+
+#english{background-image: url("flag_en.png");}
+#polish{background-image: url("flag_pl.png");}
+#german{background-image: url("flag_de.png");}
 
