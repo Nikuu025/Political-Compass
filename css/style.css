@@ -221,7 +221,7 @@ body
     -webkit-filter: brightness(0.7);
 }
 
-#english{background-image: url("img/flag_en.png");}
-#polish{background-image: url("img/flag_pl.png");}
-#german{background-image: url("img/flag_de.png");}
+#english{background-image: url("../img/flag_en.png");}
+#polish{background-image: url("../img/flag_pl.png");}
+#german{background-image: url("../img/flag_de.png");}
 
