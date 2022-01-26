@@ -3,7 +3,7 @@
     <head>
         <title>Nikuu's Political Compass</title>
 
-        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="../style.css"/>
 
         <!--Google Fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +22,7 @@
             <header>
                 <div id="header-container">
                     <div id="header-logo" class="header-l-r">
-                        <img src="nikuu.svg" alt="nikuu" id="logo" draggable="false">
+                        <img src="../img/nikuu.svg" alt="nikuu" id="logo" draggable="false">
                     </div>
 
                     
@@ -45,13 +45,13 @@
             </header>
 
             <nav id="mobile-menu-container" style="display: none;">
-                <div class="mobile-menu-item"><a href="test.html" draggable="false">TAKE THE TEST</a></div>
-                <div class="mobile-menu-item"><a href="about.html" draggable="false">ABOUT</a></div>
+                <div class="mobile-menu-item"><a href="test.html" draggable="false" class="mobile-menu-link">TAKE THE TEST</a></div>
+                <div class="mobile-menu-item"><a href="about.html" draggable="false" class="mobile-menu-link">ABOUT</a></div>
 
                 <div class="mobile-menu-item mobile-menu-languages">
-                    <button id="english" onclick="English()"></button>
-                    <button id="polish" onclick="Polish()"></button>
-                    <button id="german" onclick="German()"></button>
+                    <a id="english" href="../en/index.html"></a>
+                    <a id="polish" href="../de/index.html"></a>
+                    <a id="german" href="../pl/index.html"></a>
                 </div>
             </nav>
 
@@ -145,6 +145,8 @@
                 document.getElementById("mobile-menu-container").style.display="none";
             }
         }
+
+
     </script>
 
 
