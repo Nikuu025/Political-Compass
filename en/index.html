@@ -44,7 +44,7 @@
                 </div>
             </header>
 
-            <nav id="mobile-menu-container" style="display: none;">
+            <nav id="mobile-menu-container" style="display: none;" class="mobile-menu-closing">
                 <div class="mobile-menu-item"><a href="test.html" draggable="false" class="mobile-menu-link">TAKE THE TEST</a></div>
                 <div class="mobile-menu-item"><a href="about.html" draggable="false" class="mobile-menu-link">ABOUT</a></div>
 
@@ -137,12 +137,19 @@
             if(isShowed==0)
             {
                 isShowed=1;
+                document.getElementById("mobile-menu-container").classList.remove("mobile-menu-closing");
+                document.getElementById("mobile-menu-container").classList.add("mobile-menu-container");
                 document.getElementById("mobile-menu-container").style.display="flex";
             }
             else 
             {
                 isShowed=0;
-                document.getElementById("mobile-menu-container").style.display="none";
+                document.getElementById("mobile-menu-container").classList.remove("mobile-menu-container");
+                document.getElementById("mobile-menu-container").classList.add("mobile-menu-closing");
+                    setTimeout(() =>
+                    {
+                        document.getElementById("mobile-menu-container").style.display="none";
+                    }, 500);
             }
         }
 
