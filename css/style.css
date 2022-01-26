@@ -1,7 +1,7 @@
 body 
 {
     margin: 0;
-    background-color: #000005;;
+    background-color: #000005;
     font-family: Lato;
     color: white;
 }
@@ -128,6 +128,8 @@ body
 
 .dropdown:hover .dropdown-content {display: block;}
 
+
+
 #mobile-menu
 {
     font-size: 50px;
@@ -227,4 +229,26 @@ body
 #english{background-image: url("../img/flag_en.png");}
 #polish{background-image: url("../img/flag_pl.png");}
 #german{background-image: url("../img/flag_de.png");}
+
+
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #404050 #101015;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #404050;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #101015;
+    border-radius: 20px;
+    border: 0;
+  }
 
