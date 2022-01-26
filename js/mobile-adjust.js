@@ -21,6 +21,9 @@
             document.getElementById("mobile-menu").style.display="block";
             document.getElementById("mobile-menu").style.marginRight="20px";
             document.getElementById("header-menu").style.justifyContent="flex-end";
+
+            var languageSelect = document.getElementsByClassName("dropdown-language");
+            languageSelect[0].style.display="none";
         }
         else 
         {
@@ -39,6 +42,9 @@
 
             document.getElementById("mobile-menu").style.display="none";
             document.getElementById("header-menu").style.justifyContent="space-around";
+
+            var languageSelect = document.getElementsByClassName("dropdown-language");
+            languageSelect[0].style.display="inline-block";
         }
 
         
