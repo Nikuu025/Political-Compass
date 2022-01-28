@@ -3,13 +3,10 @@
     function adjustHeader()
     {
         if(window.innerWidth < 1000)
+        //Mobile
         {
             var navbarItems = document.getElementsByClassName("header-l-r");
-            for(let x=0; x<navbarItems.length; x++)
-            {
-                navbarItems[x].style.height="150px";
-            }
-            document.getElementById("logo").style.height = "60px";
+            
 
 
             var headerMenuItems = document.getElementsByClassName("header-menu-item");
@@ -24,7 +21,47 @@
 
             var languageSelect = document.getElementsByClassName("dropdown-language");
             languageSelect[0].style.display="none";
+
+                    //Horizontal adjust
+                    var mobileItems = document.getElementsByClassName("mobile-menu-item");
+
+                    if(window.innerWidth > window.innerHeight)
+                    {
+                        for(let x=0; x<navbarItems.length; x++)
+                        {
+                            navbarItems[x].style.height="100px";
+                        }
+                        document.getElementById("logo").style.height = "40px";
+
+                        document.getElementById("mobile-menu-container").style.top = "98px";
+
+                        
+                        for(let x=0; x<mobileItems.length; x++)
+                        {
+                            mobileItems[x].style.minHeight="90px";
+                        }
+                    }
+                    else 
+                    {
+                        for(let x=0; x<navbarItems.length; x++)
+                        {
+                            navbarItems[x].style.height="150px";
+                        }
+                        document.getElementById("logo").style.height = "60px";
+
+                        document.getElementById("mobile-menu-container").style.top = "148px";
+
+                        
+                        for(let x=0; x<mobileItems.length; x++)
+                        {
+                            mobileItems[x].style.minHeight="150px";
+                            console.log(mobileItems[x]);
+                        }
+                    }
         }
+
+
+        //PC
         else 
         {
             var navbarItems = document.getElementsByClassName("header-l-r");
