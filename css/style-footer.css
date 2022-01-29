@@ -7,6 +7,7 @@
     align-items: center;
     justify-content: flex-start;
     padding: 10px;
+    animation: hello 2s;
 }
 
 #footer-container hr
@@ -54,4 +55,10 @@
 .footer-nav a:hover
 {
     text-decoration: underline;
+}
+
+@keyframes hello
+{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
