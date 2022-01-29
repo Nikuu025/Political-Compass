@@ -123,11 +123,11 @@ h1
     padding: 10px;
 }
 
-.main-content p 
+#index-p
 {
-    margin-right: 20px;
-    margin-left: 20px;
-    font-size: 1.3rem;
+    margin-right: 40px;
+    margin-left: 40px;
+    font-size: 1.5rem;
 }
 
 #take-test-button
