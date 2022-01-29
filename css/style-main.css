@@ -139,6 +139,7 @@ h1
     padding: 20px;
     border-radius: 0px 0px 50px 50px;
     letter-spacing: 3px;
+    cursor: pointer;
 }
 
 #take-test-button:hover 
