@@ -30,12 +30,16 @@
 
 
                     //Makes animation visible again after closing the mobile menu
-                    document.getElementById("animation-static").classList.add("animation-visible");
-                    document.getElementById("animation-static").classList.remove("animation-invisible");
-                            setTimeout(() =>
-                            {
-                                document.getElementById("animation-static").style.opacity="1";
-                            }, 500);
+                    console.log(this.scrollY);
+                    if(this.scrollY < 70)
+                    {
+                        document.getElementById("animation-static").classList.add("animation-visible");
+                        document.getElementById("animation-static").classList.remove("animation-invisible");
+                                setTimeout(() =>
+                                {
+                                    document.getElementById("animation-static").style.opacity="1";
+                                }, 500);
+                    }
         }
     }
 
