@@ -49,8 +49,8 @@
 
 .index-animation
 {
-    height: 20vh;
-    width: 20vh;
+    height: 25vh;
+    width: 25vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -68,4 +68,26 @@
         -webkit-transform: rotate(360deg); 
         transform:rotate(360deg); 
     } 
+}
+
+.animation-visible
+{
+    animation: animacja1 500ms;
+}
+
+.animation-invisible
+{
+    animation: animacja2 500ms;
+}
+
+@keyframes animacja1
+{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@keyframes animacja2
+{
+    0%{opacity: 1;}
+    100%{opacity: 0;}
 }
