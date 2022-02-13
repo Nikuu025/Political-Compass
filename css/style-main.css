@@ -29,6 +29,7 @@
 #animation-static
 {
     background-image: url(../img/compass_logo_animation_static.png);
+    pointer-events: none;
 }
 
 #animation-rotating1
