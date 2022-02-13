@@ -3,8 +3,11 @@ window.addEventListener("scroll", (event) => {
     console.log(scroll)
 
     console.log(isShowed);
+
+    var animationPosition = document.getElementById("animation-static").getBoundingClientRect().top;
+    var headerPosition = document.getElementById("header-container").getBoundingClientRect().bottom;
     
-    if(scroll > 70) 
+    if(animationPosition < headerPosition) 
     {
         document.getElementById("animation-static").classList.add("animation-invisible");
         document.getElementById("animation-static").classList.remove("animation-visible");
@@ -22,5 +25,7 @@ window.addEventListener("scroll", (event) => {
                     document.getElementById("animation-static").style.opacity="1";
                 }, 500);
     }
+
+    
 });
 
